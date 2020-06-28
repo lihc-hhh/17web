@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>font</title>
+		<style>
+			html {
+				font-size: 32px;
+			}
+			
+			#test1 span:nth-of-type(1) {
+				font-size: 120%;
+				color: red;
+				font-family: 'Microsoft YaHei';
+			}
+			
+			#test1 span:nth-of-type(2) {
+				font-size: 1.2em;
+				color: green;
+				font-family: KaiTi;
+			}
+			
+			#test1 span:nth-of-type(3) {
+				font-size: 1.2rem;
+				color: blue;
+				font-family: KaiTi;
+			}
+			
+			#test1 span:nth-of-type(4) {
+				font-size: xx-large;
+				color: gray;
+				font-family: 'Microsoft Tai Le';
+			}
+			
+			#test2 span:nth-of-type(1) {
+				color: green;
+				font-style: italic;
+				text-decoration: line-through;
+			}
+			
+			#test2 span:nth-of-type(2) {
+				color: rebeccapurple;
+				font-weight: bolder;
+				text-decoration: overline;
+			}
+			
+			#test2 span:nth-of-type(3) {
+				color: brown;
+				font-weight: 700;
+				text-decoration: underline;
+			}
+			
+			#test3 span:nth-of-type(1) {
+				color: green;
+				text-shadow: 3px 3px 2px green;
+			}
+			
+			#test3 span:nth-of-type(2) {
+				color: red;
+				font-size: 2em;
+				text-shadow: -4px -4px 3px red, 4px 4px 3px gray;
+			}
+			
+			#test3 span:nth-of-type(3) {
+				color: brown;
+				letter-spacing: 1.5em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div style="font-size: 24px">
+			<p id="test1"><span>字体1：用120%显示字体大小 用1.2em显示字体大小 用1.2rem显示字体大小 用xx-large显示字体大小</span></p>
+			<p id="test2"><span>字体2：用斜体显示文字 用粗体bolder显示文字 用粗体700显示文字</span></p>
+			<p id="test3"><span>字体3：给文字加上阴影 给文字加上双阴影 改变字符之间的间距</span></p>
+		</div>
+	</body>
+
+</html>
