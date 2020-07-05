@@ -1,0 +1,55 @@
+﻿<!DOCTYPE  html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>This is my title</title>
+		<style>
+			#container {
+				width: 500px;
+				height: 700px;
+				margin: 20px auto;
+				background-color: #fcfbdf;
+				border: 1px solid #fcfbdf;
+				position: relative;
+			}
+			
+			#profile {
+				clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+				width: 200px;
+				border: 1px solid blue;
+				overflow: hidden;
+				position: absolute;
+				left: 30%;
+				margin-top: 45%;
+				animation: myfirst infinite linear;
+				animation-delay: 1s;
+				animation-duration: 3s;
+			}
+			
+			@keyframes myfirst {
+				0% {
+					transform: rotate(0deg) scale(0.2);
+					opacity: 0;
+				}
+				50% {
+					transform: rotate(180deg) scale(0.6);
+					opacity: 0.1;
+				}
+				100% {
+					transform: rotate(360deg) scale(1);
+					opacity: 1;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="d1">
+				<img id="profile" src="images/gyy_profile.jpg">
+			</div>
+		</div>
+	</body>
+
+</html>
